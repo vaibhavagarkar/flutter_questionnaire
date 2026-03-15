@@ -1,17 +1,48 @@
-# flutter_questionnaire
+# Flutter Questionnaire App
 
-A new Flutter project.
+A Flutter interview assignment app built with GetX, offline storage, and a clean layered structure.
 
-## Getting Started
+## Project Summary
 
-This project is a starting point for a Flutter application.
+This application includes:
 
-A few resources to get you started if this is your first Flutter project:
+- Register, login, and logout flow
+- Questionnaire listing and submission flow
+- Offline storage for users and submissions
+- Submission history with date, time, latitude, and longitude
+- GetX-based navigation and state handling
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Tech Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter
+- GetX
+- sqflite
+- shared_preferences
+- geolocator
+
+## Architecture
+
+The project is organized with a clean structure using:
+
+- `core`
+- `data`
+- `domain`
+- `modules`
+- `routes`
+
+This keeps UI, state, data access, and business logic separated and easier to maintain.
+
+## Development Version
+
+This project was developed with:
+
+- Flutter `3.41.2`
+- Dart `3.11.0`
+- DevTools `2.54.1`
+
+## Notes
+
+- Location permission is requested at app startup.
+- Questionnaire data is currently served from a local mock data source.
+- User session is stored with `shared_preferences`.
+- Structured offline data is stored with `sqflite`.
